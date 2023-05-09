@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Twitter Ad Blocker",
+  "version": "1.0",
+  "description": "A simple extension to block promoted tweets on Twitter",
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*", "https://www.twitter.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["https://twitter.com/*", "https://www.twitter.com/*"]
+}
